@@ -3,7 +3,15 @@
  @section('content')
     <h1>MOVIES</h1>
     <div id="test">
-      {{ $movies }}
+      <ul>
+         @foreach ($movies as $movie)
+
+            <li>
+               {{ $movie['title']}}
+            </li>
+             
+         @endforeach
+      </ul>
     </div>
      
  @endsection
