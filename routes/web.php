@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Qui bisogna importare il controller e la route che vogliamo utilizzare
+
+use App\Http\Controllers\MyController;
+
+Route::get('/',[MyController::class,'home']);
+
+
