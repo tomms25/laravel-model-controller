@@ -8,6 +8,12 @@ class MyController extends Controller
 {
     public function home(){
 
-        return view('pages.home'); 
+        $data = [
+
+            'name' => 'Guybrush'
+
+        ];
+
+        return view('pages.home', $data); 
     }
 }
