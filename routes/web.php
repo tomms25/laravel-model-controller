@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 
 // Qui bisogna importare il controller e la route che vogliamo utilizzare
 
+use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\MyController;
+
+// Dentro la Route viene passato il nome del metodo creato in MyController
 
 Route::get('/',[MyController::class,'home']);
 
